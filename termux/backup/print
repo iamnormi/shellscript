@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo "Enter Name"
+
+read name
+
+echo My name is $name
+
+echo my is "${name%*.}.shh"

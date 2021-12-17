@@ -1,0 +1,26 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+url=$1
+echo -e "\e[1;31m|<<< Enter Your Choice >>>|\e[0m"
+echo -e "\e[1;32m    1.YouTube-dl    \e[0m"
+echo -e "\e[1;32m    2.axel - Direct Download CLI Download Accelerator    \e[0m"
+echo -e "\e[32m    3.exit    \e[0m"
+read CHOICE
+case $CHOICE in
+	1)
+	echo -e "\e[5;32m <<<  Downloading initiated... ; >>> \e[0m"
+	youtube-dl -F $url
+	echo -e "\e[35m <---Give me Correct format you want!---> \e[0m"
+	read format
+	cd ~/sdcard
+	youtube-dl -f $format $url
+	;;
+	2)
+	echo -e "\e[5;32m <<<  Downloading initiated... ; >>> \e[0m"
+	cd ~/sdcard/downloads
+	axel $url
+	;;
+	3)
+	echo "Exit"
+	;;
+esac

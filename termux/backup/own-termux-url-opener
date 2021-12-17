@@ -1,0 +1,26 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+echo "Enter Your Choice... ;"
+echo " a for Audio"
+echo " v for Video" 
+read choice
+ 
+case $choice in 
+	a)
+	    cd /sdcard/yta/
+	    echo -e "\e[32m <<<  Downloading initiated... ; >>> \e[0m"
+	    youtube-dl -F $1
+	    echo -e "\e[35m <---Give me Correct format you want!---> \e[0m"
+	    read format
+	    youtube-dl -f $format $1
+	    ;;
+
+	v)  
+	    cd /sdcard/ytv/
+            echo -e "\e[32m <<<  Downloading initiated... ; >>> \e[0m"
+            youtube-dl -F $1
+            echo -e "\e[35m <---Give me Correct format you want!---> \e[0m"
+            read format
+            youtube-dl -f $format $1
+	    ;;
+esac

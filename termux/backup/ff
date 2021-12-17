@@ -1,0 +1,4 @@
+#!/bin/bash
+for name in *.mkv; do
+  ffmpeg -i "$name" -c:v copy -codec:a aac -b:a 224k  "${name%.*}.mkv"
+done

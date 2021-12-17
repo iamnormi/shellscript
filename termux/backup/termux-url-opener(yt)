@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo -e "\e[32m <<<  Downloading initiated... ; >>> \e[0m"
+youtube-dl -F $1
+
+echo -e "\e[35m <---Give me Correct format you want!---> \e[0m"
+
+read format
+cd ~/sdcard/
+youtube-dl -f $format $1

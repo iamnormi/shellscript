@@ -1,0 +1,5 @@
+#!/bin/bash
+cd /sdcard/Music/Newpipe/
+for name in *.opus; do
+	play-audio "${name%.*}.opus"
+done

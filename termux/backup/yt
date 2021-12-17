@@ -1,0 +1,11 @@
+#!/bin/bash
+echo -e "\e[31m <---Give Me valid yt-link---> \e[0m"
+read link
+echo -e "\e[32m <<<  Downloading initiated... ; >>> \e[0m"
+youtube-dl -F $link
+
+echo -e "\e[35m <---Give me Correct format you want!---> \e[0m"
+
+read format
+
+youtube-dl -f $format $link

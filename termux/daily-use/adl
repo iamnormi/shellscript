@@ -1,0 +1,3 @@
+#!/bin/bash
+read link
+axel $link

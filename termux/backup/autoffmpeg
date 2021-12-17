@@ -1,0 +1,9 @@
+#!/bin/bash
+for name in *.ac3; do
+  ffmpeg -i "$name" -c:a libvorbis -b:a 128k  "${name%.*}1.opus" 
+done 
+
+for name in *1.opus; do
+  ffmpeg -i "$name" -c:a libopus -b:a 128k "${name%.*}2.opus"
+done
+

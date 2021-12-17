@@ -1,0 +1,20 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+url=$1
+echo "1.YouTube-dl"
+echo "2.axel - Download Accelator"
+echo "3.exit"
+read CHOICE
+case $CHOICE in
+	1)
+	youtube-dl -F $url
+	read format
+	youtube-dl -f $format $url
+	;;
+	2)
+	axel $url
+	;;
+	3)
+	echo "Exit"
+	;;
+esac

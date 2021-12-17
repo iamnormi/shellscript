@@ -1,0 +1,10 @@
+#!/bin/bash
+for name in *.mkv; do
+  echo ep
+  read ep
+  ffmpeg -i "$name" -vn -c:a copy "audio$ep.aac"
+  ffmpeg -i "$name" -an -c:v copy "video$ep.mkv"
+  echo se
+  read se
+  ffmpeg -i "video$ep.mkv" -i "audio$ep.aac" -c:v copy  -c:a copy -c:s srt "Elite-$se$ep.mkv"
+done
