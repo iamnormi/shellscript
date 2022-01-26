@@ -13,7 +13,7 @@
 sudo apt purge firefox pidgin thunderbird gnome-software transmission-* parole gnome-font-viewer gnome-sudoku gnome-mines sgt-* snapd
 sud apt autoremove -y
 #Initial install
-sudo apt install git mpv ffmpeg axel elinks python3-pip conky plank font-manager fonts-dejavu fonts-firacode fonts-cantarell fonts-monofur fonts-hack* -y 
+sudo apt install git mpv ffmpeg axel elinks python3-pip conky plank font-manager fonts-dejavu fonts-firacode fonts-cantarell fonts-monofur fonts-hack* gnome-disk-utility baobab-y 
 sudo apt purge youtube-dl
 sudo apt autoremove -y
 sudo pip3 install youtube-dl yt-dlp 
