@@ -10,7 +10,7 @@ sudo apt purge pidgin gnome-software xfce4-notes gnome-menus gnome-mines gnome-s
 
 ### install required tools ###
 
-sudo apt install font-manager rofi axel git mpv ffmpeg python3-pip gnome-disk-utility ncdu virtualbox virtualbox-ext-pack virtualbox-guest-additions-iso elinks w3m lynx git conky light
+sudo apt install xclip jq font-manager rofi axel git mpv ffmpeg python3-pip gnome-disk-utility ncdu virtualbox virtualbox-ext-pack virtualbox-guest-additions-iso elinks w3m lynx git conky light
 
 #install fonts
 sudo apt install fonts-firacode fonts-cantarell
