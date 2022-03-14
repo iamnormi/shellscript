@@ -87,6 +87,18 @@ curl -Lo bitw.deb https://github.com/bitwarden/desktop/releases/download/v${BITW
 sudo dpkg -i bitw.deb ; rm -v bitw.deb
 cd
 
+
+#install VsCodium
+
+wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg \
+    | gpg --dearmor \
+    | sudo dd of=/usr/share/keyrings/vscodium-archive-keyring.gpg
+
+echo 'deb [ signed-by=/usr/share/keyrings/vscodium-archive-keyring.gpg ] https://download.vscodium.com/debs vscodium main' \
+    | sudo tee /etc/apt/sources.list.d/vscodium.list
+
+sudo apt update && sudo apt install codium
+
 #install oh-my-zsh
 #HTTps://ohmyz.sh/
 sudo apt install zsh curl ; sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
