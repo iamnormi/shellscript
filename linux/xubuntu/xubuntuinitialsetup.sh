@@ -5,12 +5,14 @@
 
 #remove unwanted tools
 
-sudo apt purge pidgin gnome-software xfce4-notes gnome-menus gnome-mines gnome-sudoku parole ristretto gimp gnome-themes-extra gnome-font-viewer sgt* thunderbird firefox transmission-* snapd gnome-themes-extra ; sudo apt autoremove
+sudo apt purge pidgin gnome-software xfce4-notes gnome-menus gnome-mines gnome-sudoku parole ristretto gimp gnome-themes-extra gnome-font-viewer sgt* thunderbird firefox transmission-* snapd gnome-themes-extra simple-scan ; sudo apt autoremove
 
+#full upgrade
+sudo apt update ; sudo apt upgrade -y
 
 ### install required tools ###
 
-sudo apt install xclip jq font-manager rofi axel git mpv ffmpeg python3-pip gnome-disk-utility ncdu virtualbox virtualbox-ext-pack virtualbox-guest-additions-iso elinks w3m lynx git conky light
+sudo apt install xclip jq font-manager rofi axel git mpv ffmpeg python3-pip gnome-disk-utility ncdu virtualbox virtualbox-ext-pack virtualbox-guest-additions-iso elinks w3m lynx git conky light curl vim xfce4-cpufreq-plugin
 
 #install fonts
 sudo apt install fonts-firacode fonts-cantarell
@@ -61,8 +63,8 @@ rm coreutils-$CORE_UTILS_VERSION.tar.xz
     cp ./src/mv ../advmv
 )
 rm -rf coreutils-$CORE_UTILS_VERSION
-sudo cp -v advcp /usr/local/bin
-sudo cp -v advmv /usr/local/bin
+sudo mv -v advcp /usr/local/bin
+sudo mv -v advmv /usr/local/bin
 
 cd ; rm -vrf advcpmv
 
@@ -77,7 +79,7 @@ tar -xvf xdm.tar.xz ; sudo bash install.sh ; rm -v install.sh readme.txt xdm.tar
 cd
 TG_VER=$(curl -s "https://api.github.com/repos/telegramdesktop/tdesktop/releases/latest" | grep -Po '"tag_name": "v\K[0-9.]+')
 curl -Lo tsetup.tar.xz "https://github.com/telegramdesktop/tdesktop/releases/download/v${TG_VER}/tsetup.${TG_VER}.tar.xz"
-tar -xvf tsetup.tar.xz ; mkdir -pv ~/.telegram ; cp -vrf Telegram/* ~/.telegram
+tar -xvf tsetup.tar.xz ; mkdir -pv ~/.telegram ; cp -vrf Telegram/* ~/.telegram ; cd ; rm -vrf tsetup.tar.xz ; rm -vrf Telegram ; cd
 cd
 
 #install Bitwardern
@@ -87,17 +89,19 @@ curl -Lo bitw.deb https://github.com/bitwarden/desktop/releases/download/v${BITW
 sudo dpkg -i bitw.deb ; rm -v bitw.deb
 cd
 
+#install bat
+#git clone https://github.com/tshakalekholoane/bat ; cd ; cd bat 
 
 #install VsCodium
 
-wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg \
-    | gpg --dearmor \
-    | sudo dd of=/usr/share/keyrings/vscodium-archive-keyring.gpg
+#wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg \
+#    | gpg --dearmor \
+#    | sudo dd of=/usr/share/keyrings/vscodium-archive-keyring.gpg
 
-echo 'deb [ signed-by=/usr/share/keyrings/vscodium-archive-keyring.gpg ] https://download.vscodium.com/debs vscodium main' \
-    | sudo tee /etc/apt/sources.list.d/vscodium.list
+#echo 'deb [ signed-by=/usr/share/keyrings/vscodium-archive-keyring.gpg ] https://download.vscodium.com/debs vscodium main' \
+#    | sudo tee /etc/apt/sources.list.d/vscodium.list
 
-sudo apt update && sudo apt install codium
+#sudo apt update && sudo apt install codium
 
 #install oh-my-zsh
 #HTTps://ohmyz.sh/
