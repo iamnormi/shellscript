@@ -17,6 +17,14 @@ sudo apt install xclip jq font-manager rofi axel git mpv ffmpeg python3-pip gnom
 #install fonts
 sudo apt install fonts-firacode fonts-cantarell
 
+#JetBrainsMono font
+sudo apt install curl
+cd ; JBM_VER=$(curl -s "https://api.github.com/repos/JetBrains/JetBrainsMono/releases/latest" | grep -Po '"tag_name": "v\K[0-9.]+')
+cd ; curl -Lo JBM.zip "https://github.com/JetBrains/JetBrainsMono/releases/download/v${JBM_VER}/JetBrainsMono-${JBM_VER}.zip"
+cd ; unzip -d JBM JBM.zip
+cd ; sudo mkdir -pv  /usr/share/fonts/truetype/JetBrainsMono ; sudo cp -vrf ~/JBM/fonts/ttf/*  /usr/share/fonts/truetype/JetBrainsMono/
+cd ; rm -vrf JBM*
+
 #install yt-dlp , youtube-dl
 sudo apt purge youtube-dl ; pip3 install yt-dlp youtube-dl 
 sudo apt autoremove
@@ -28,12 +36,7 @@ sudo apt install wget
 echo "deb [arch=amd64] https://deb.librewolf.net $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/librewolf.list
 sudo wget https://deb.librewolf.net/keyring.gpg -O /etc/apt/trusted.gpg.d/librewolf.gpg 
 sudo apt update ; sudo apt install librewolf -y
-#librewolf extensions 
-echo "Installing Dracula theme for librewolf..."
-librewolf https://addons.mozilla.org/en-US/firefox/addon/dracula-dark-colorscheme/
 
-echo "Install dark viewer add-on in librewolf..."
-librewolf https://addons.mozilla.org/en-US/firefox/addon/darkreader/
 
 #install exa
 sudo apt install wget
@@ -83,14 +86,17 @@ tar -xvf tsetup.tar.xz ; mkdir -pv ~/.telegram ; cp -vrf Telegram/* ~/.telegram 
 cd
 
 #install Bitwardern
-cd
-BITW_VER=$(curl -s "https://github.com/bitwarden/desktop/releases/latest" | grep releases | sed -E 's/.*"([^"]+)".*/\1/' | grep -Po "v\K[0-9.]+") 
-curl -Lo bitw.deb https://github.com/bitwarden/desktop/releases/download/v${BITW_VER}/Bitwarden-${BITW_VER}-amd64.deb
-sudo dpkg -i bitw.deb ; rm -v bitw.deb
-cd
+#cd
+#BITW_VER=$(curl -s "https://github.com/bitwarden/desktop/releases/latest" | grep releases | sed -E 's/.*"([^"]+)".*/\1/' | grep -Po "v\K[0-9.]+") 
+#curl -Lo bitw.deb https://github.com/bitwarden/desktop/releases/download/v${BITW_VER}/Bitwarden-${BITW_VER}-amd64.deb
+#sudo dpkg -i bitw.deb ; rm -v bitw.deb
+#cd
 
 #install bat
-#git clone https://github.com/tshakalekholoane/bat ; cd ; cd bat 
+cd ; bat_ver=$(curl -s "https://api.github.com/repos/tshakalekholoane/bat/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/') 
+curl -Lo "https://github.com/tshakalekholoane/bat/releases/download/${bat_ver}/bat"
+cd ; sudo mv -v bat /usr/local/bin/ 
+
 
 #install VsCodium
 

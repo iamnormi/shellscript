@@ -1,5 +1,7 @@
 ###theming###
 
+sudo apt install axel
+
 #gtk theme 'dracula'
 cd /usr/share/themes ; pwd ;sudo axel https://github.com/dracula/gtk/releases/download/v3.0/Dracula.tar.xz ; sudo tar -xvf Dracula.tar.xz ; sudo rm -v *.tar.xz ; cd
 
