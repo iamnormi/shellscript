@@ -86,11 +86,11 @@ tar -xvf tsetup.tar.xz ; mkdir -pv ~/.telegram ; cp -vrf Telegram/* ~/.telegram 
 cd
 
 #install Bitwardern
-#cd
-#BITW_VER=$(curl -s "https://github.com/bitwarden/desktop/releases/latest" | grep releases | sed -E 's/.*"([^"]+)".*/\1/' | grep -Po "v\K[0-9.]+") 
-#curl -Lo bitw.deb https://github.com/bitwarden/desktop/releases/download/v${BITW_VER}/Bitwarden-${BITW_VER}-amd64.deb
-#sudo dpkg -i bitw.deb ; rm -v bitw.deb
-#cd
+cd
+BITW_VER=$(curl -s "https://github.com/bitwarden/desktop/releases/latest" | grep releases | sed -E 's/.*"([^"]+)".*/\1/' | grep -Po "v\K[0-9.]+") 
+curl -Lo bitw.deb https://github.com/bitwarden/desktop/releases/download/v${BITW_VER}/Bitwarden-${BITW_VER}-amd64.deb
+sudo dpkg -i bitw.deb ; rm -v bitw.deb
+cd
 
 #install bat
 cd ; bat_ver=$(curl -s "https://api.github.com/repos/tshakalekholoane/bat/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/') 
