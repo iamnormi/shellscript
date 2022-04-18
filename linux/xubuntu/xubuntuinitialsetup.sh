@@ -12,7 +12,7 @@ sudo apt update ; sudo apt upgrade -y
 
 ### install required tools ###
 
-sudo apt install xclip jq font-manager rofi axel git mpv ffmpeg python3-pip gnome-disk-utility ncdu virtualbox virtualbox-ext-pack virtualbox-guest-additions-iso elinks w3m lynx git conky light curl vim xfce4-cpufreq-plugin sxiv
+sudo apt install xclip jq font-manager rofi axel git mpv ffmpeg python3-pip gnome-disk-utility ncdu virtualbox virtualbox-ext-pack virtualbox-guest-additions-iso elinks w3m lynx git conky light curl vim xfce4-cpufreq-plugin sxiv poppler-utils
 
 #install fonts
 sudo apt install fonts-firacode fonts-cantarell
