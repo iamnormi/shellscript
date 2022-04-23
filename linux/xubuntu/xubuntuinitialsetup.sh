@@ -85,7 +85,8 @@ cd
 cd ; bat_ver=$(curl -s "https://api.github.com/repos/tshakalekholoane/bat/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/') 
 curl -Lo "https://github.com/tshakalekholoane/bat/releases/download/${bat_ver}/bat"
 cd ; sudo mv -v bat /usr/local/bin/ 
-
+#setup
+cd /usr/local/bin/ ; sudo ./bat -t 60 ; sudo ./bat -p 
 
 #install VsCodium
 
