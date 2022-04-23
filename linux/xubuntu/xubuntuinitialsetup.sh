@@ -5,25 +5,14 @@
 
 #remove unwanted tools
 
-sudo apt purge pidgin gnome-software xfce4-notes gnome-menus gnome-mines gnome-sudoku parole ristretto gimp gnome-themes-extra gnome-font-viewer sgt* thunderbird firefox transmission-* snapd gnome-themes-extra simple-scan ; sudo apt autoremove
+sudo apt purge pidgin gnome-software xfce4-notes gnome-menus gnome-mines gnome-sudoku parole ristretto gnome-themes-extra gnome-font-viewer sgt* thunderbird transmission-* snapd gnome-themes-extra simple-scan ; sudo apt autoremove
 
 #full upgrade
 sudo apt update ; sudo apt upgrade -y
 
 ### install required tools ###
 
-sudo apt install xclip jq font-manager rofi axel git mpv ffmpeg python3-pip gnome-disk-utility ncdu virtualbox virtualbox-ext-pack virtualbox-guest-additions-iso elinks w3m lynx git conky light curl vim xfce4-cpufreq-plugin sxiv poppler-utils
-
-#install fonts
-sudo apt install fonts-firacode fonts-cantarell
-
-#JetBrainsMono font
-sudo apt install curl
-cd ; JBM_VER=$(curl -s "https://api.github.com/repos/JetBrains/JetBrainsMono/releases/latest" | grep -Po '"tag_name": "v\K[0-9.]+')
-cd ; curl -Lo JBM.zip "https://github.com/JetBrains/JetBrainsMono/releases/download/v${JBM_VER}/JetBrainsMono-${JBM_VER}.zip"
-cd ; unzip -d JBM JBM.zip
-cd ; sudo mkdir -pv  /usr/share/fonts/truetype/JetBrainsMono ; sudo cp -vrf ~/JBM/fonts/ttf/*  /usr/share/fonts/truetype/JetBrainsMono/
-cd ; rm -vrf JBM*
+sudo apt install xclip jq font-manager rofi axel git mpv ffmpeg python3-pip gnome-disk-utility ncdu virtualbox virtualbox-ext-pack virtualbox-guest-additions-iso elinks w3m lynx git conky light curl vim xfce4-cpufreq-plugin sxiv poppler-utils zathura 
 
 #install yt-dlp , youtube-dl
 sudo apt purge youtube-dl ; pip3 install yt-dlp youtube-dl 
@@ -32,10 +21,10 @@ sudo apt autoremove
 
 #Install librewolf
 #https://deb.librewolf.net
-sudo apt install wget
-echo "deb [arch=amd64] https://deb.librewolf.net $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/librewolf.list
-sudo wget https://deb.librewolf.net/keyring.gpg -O /etc/apt/trusted.gpg.d/librewolf.gpg 
-sudo apt update ; sudo apt install librewolf -y
+#sudo apt install wget
+#echo "deb [arch=amd64] https://deb.librewolf.net $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/librewolf.list
+#sudo wget https://deb.librewolf.net/keyring.gpg -O /etc/apt/trusted.gpg.d/librewolf.gpg 
+#sudo apt update ; sudo apt install librewolf -y
 
 
 #install exa
@@ -100,14 +89,14 @@ cd ; sudo mv -v bat /usr/local/bin/
 
 #install VsCodium
 
-#wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg \
-#    | gpg --dearmor \
-#    | sudo dd of=/usr/share/keyrings/vscodium-archive-keyring.gpg
+wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg \
+    | gpg --dearmor \
+    | sudo dd of=/usr/share/keyrings/vscodium-archive-keyring.gpg
 
-#echo 'deb [ signed-by=/usr/share/keyrings/vscodium-archive-keyring.gpg ] https://download.vscodium.com/debs vscodium main' \
-#    | sudo tee /etc/apt/sources.list.d/vscodium.list
+echo 'deb [ signed-by=/usr/share/keyrings/vscodium-archive-keyring.gpg ] https://download.vscodium.com/debs vscodium main' \
+    | sudo tee /etc/apt/sources.list.d/vscodium.list
 
-#sudo apt update && sudo apt install codium
+sudo apt update && sudo apt install codium
 
 #install oh-my-zsh
 #HTTps://ohmyz.sh/
