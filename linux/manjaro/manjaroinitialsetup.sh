@@ -1,14 +1,16 @@
 #!/bin/sh
 
 #Remove Unwanted
-sudo pacman -Rs midori parole
+sudo pacman -Rs midori parole qpdfview 
 
 #SystemFullUpgrade
 sudo pacman -Syu
 
 #Install Required 
-#sudo pacman -Sy firefox libreoffice-fresh ncdu mpv yt-dlp zathura gimp sxiv exa zsh curl xfce4-cpufreq-plugin xfce4-netload-plugin xfce4-systemload-plugin patch
+#sudo pacman -Sy firefox libreoffice-fresh ncdu mpv yt-dlp zathura gimp sxiv exa zsh curl xfce4-cpufreq-plugin xfce4-netload-plugin xfce4-systemload-plugin patch adobe-source-sans-fonts elinks gnome-disk-utility xclip atril
+
 #install VirtualBox 
+#Look manjaro wiki
 
 #install bat
 cd ~ ; bat_ver=$(curl -s "https://api.github.com/repos/tshakalekholoane/bat/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
@@ -31,31 +33,6 @@ cd ~
 XDM_VER=$(curl -s "https://api.github.com/repos/subhra74/xdm/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
 curl -Lo xdm.tar.xz "https://github.com/subhra74/xdm/releases/download/${XDM_VER}/xdm-setup-${XDM_VER}.tar.xz"
 tar -xvf xdm.tar.xz ; sudo bash install.sh ; rm -v install.sh readme.txt xdm.tar.xz ; cd
-
-
-#install advcpmv
-cd ~
-set -e
-ADVCPMV_VERSION=${1:-0.9}
-CORE_UTILS_VERSION=${2:-9.0}
-
-wget http://ftp.gnu.org/gnu/coreutils/coreutils-$CORE_UTILS_VERSION.tar.xz
-tar xvJf coreutils-$CORE_UTILS_VERSION.tar.xz
-rm coreutils-$CORE_UTILS_VERSION.tar.xz
-(
-    cd coreutils-$CORE_UTILS_VERSION/
-    wget https://raw.githubusercontent.com/jarun/advcpmv/master/advcpmv-$ADVCPMV_VERSION-$CORE_UTILS_VERSION.patch
-    patch -p1 -i advcpmv-$ADVCPMV_VERSION-$CORE_UTILS_VERSION.patch
-    ./configure
-    make
-    cp ./src/cp ../advcp
-    cp ./src/mv ../advmv
-)
-rm -rf coreutils-$CORE_UTILS_VERSION
-sudo mv -v advcp /usr/local/bin
-sudo mv -v advmv /usr/local/bin
-cd ~ ; rm -vrf advcpmv
-
 
 #install oh-my-zsh
 #HTTps://ohmyz.sh/
