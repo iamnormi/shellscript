@@ -4,7 +4,7 @@
 sudo pacman -Rs midori parole qpdfview 
 
 #Update Sourcelist or Mirror-list
-#sudo pacman-mirrors -g
+sudo pacman-mirrors -g
 
 #SystemFullUpgrade
 sudo pacman -Syu
