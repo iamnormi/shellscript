@@ -3,11 +3,13 @@
 #Remove Unwanted
 sudo pacman -Rs midori parole qpdfview 
 
+#Update Sourcelist or Mirror-list
+#sudo pacman-mirrors -g
+
 #SystemFullUpgrade
 sudo pacman -Syu
-
 #Install Required 
-#sudo pacman -Sy firefox libreoffice-fresh ncdu mpv yt-dlp zathura gimp sxiv exa zsh curl xfce4-cpufreq-plugin xfce4-netload-plugin xfce4-systemload-plugin patch adobe-source-sans-fonts elinks gnome-disk-utility xclip atril
+sudo pacman -Sy firefox libreoffice-fresh ncdu mpv yt-dlp zathura zathura-pdf-poppler gimp sxiv exa zsh curl xfce4-cpufreq-plugin xfce4-netload-plugin xfce4-systemload-plugin patch adobe-source-sans-fonts elinks gnome-disk-utility xclip  vim yay youtube-dl rofi alacritty
 
 #install VirtualBox 
 #Look manjaro wiki
@@ -33,6 +35,9 @@ cd ~
 XDM_VER=$(curl -s "https://api.github.com/repos/subhra74/xdm/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
 curl -Lo xdm.tar.xz "https://github.com/subhra74/xdm/releases/download/${XDM_VER}/xdm-setup-${XDM_VER}.tar.xz"
 tar -xvf xdm.tar.xz ; sudo bash install.sh ; rm -v install.sh readme.txt xdm.tar.xz ; cd
+
+#yay
+yay -S nerd-fonts-jetbrains-mono
 
 #install oh-my-zsh
 #HTTps://ohmyz.sh/
