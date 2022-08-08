@@ -9,7 +9,7 @@ sudo reflector -c "IN" -f 12 -l 10 -n 12 --save /etc/pacman.d/mirrorlist
 sudo pacman -Syu
 
 #Install Required 
-sudo pacman -Sy firefox libreoffice-fresh ncdu mpv zathura zathura-pdf-poppler gimp sxiv exa zsh curl patch adobe-source-sans-fonts elinks  xclip vim  yt-dlp rofi unzip axel android-tools android-file-transfer tree virtualbox virtualbox-guest-iso virtualbox-host-modules-arch fzf pulseaudio-bluetooth bluez neovim make fakeroot patch git pkg-config kodi blueman htop picom  pulsemixer zip xwallpaper aria2 ffmpeg 
+sudo pacman -Sy firefox libreoffice-fresh ncdu mpv zathura zathura-pdf-poppler gimp sxiv exa zsh curl patch adobe-source-sans-fonts elinks  xclip vim  yt-dlp rofi unzip axel android-tools android-file-transfer tree virtualbox virtualbox-guest-iso virtualbox-host-modules-arch fzf pulseaudio-bluetooth bluez neovim make fakeroot patch git pkg-config kodi blueman htop picom  pulsemixer zip xwallpaper aria2 ffmpeg zsh-autosuggestions  lightdm lightdm-gtk-greeter-settings ncdu brightnessctl net-tools pamixer tree fakeroot patch unzip make zsh-syntax-highlighting lightdm-gtk-greeter-settings lightdm ttf-jetbrains-mono ttf-joypixels python3-pip libxft-bgra  
 
 
 #install bat
@@ -71,7 +71,7 @@ rm -vrf ~/pikaur
 
 
 #pikaur
-pikaur -S nerd-fonts-jetbrains-mono update-grub ytfzf cava
+pikaur -S nerd-fonts-jetbrains-mono update-grub ytfzf cava brave-bin
 
 #install oh-my-zsh
 #HTTps://ohmyz.sh/
@@ -95,6 +95,9 @@ sudo make -C ~/.local/src/dmenu install
 git clone --depth=1 https://github.com/iamvk1437k/dwmblocks.git ~/.local/src/dwmblocks
 sudo make -C ~/.local/src/dwmblocks install
 
+
+#mousepad
+sudo pacman -Syu mousepad
 
 #Bye Bye Xfce4
 sudo pacman -Rns xfce4 xfce4-goodies
