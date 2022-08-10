@@ -12,5 +12,5 @@ These scripts was maintained by [**1437k**](https://github.com/iamvk1437k).
 
 ## License
 
-[MIT License](./LICENSE)
+[GNU GENERAL PUBLIC LICENSE](./LICENSE)
 
