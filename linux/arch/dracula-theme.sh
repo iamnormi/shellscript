@@ -28,12 +28,6 @@ cd ; git clone https://github.com/dracula/mousepad.git && cd mousepad ; mkdir -p
 #wallpaper
 cd /usr/share/backgrounds ; sudo axel https://github.com/dracula/wallpaper/raw/master/arch.png ; cd
 
-#JetBrainsMono font
-cd ; JBM_VER=$(curl -s "https://api.github.com/repos/JetBrains/JetBrainsMono/releases/latest" | grep -Po '"tag_name": "v\K[0-9.]+')
-cd ; curl -Lo JBM.zip "https://github.com/JetBrains/JetBrainsMono/releases/download/v${JBM_VER}/JetBrainsMono-${JBM_VER}.zip"
-cd ; unzip -d JBM JBM.zip
-cd ; sudo mkdir -pv  /usr/share/fonts/truetype/JetBrainsMono ; sudo cp -vrf ~/JBM/fonts/ttf/*  /usr/share/fonts/truetype/JetBrainsMono/
-cd ; rm -vrf JBM*
 
 #lexend font
 cd ; curl -Lo lexend.zip https://fonts.google.com/download\?family\=Lexend 
