@@ -9,7 +9,7 @@ sudo reflector -c "IN" -f 12 -l 10 -n 12 --save /etc/pacman.d/mirrorlist
 sudo pacman -Syu
 
 #Install Required 
-sudo pacman -Sy libreoffice-fresh ncdu mpv zathura zathura-pdf-poppler gimp sxiv exa zsh curl patch adobe-source-sans-fonts elinks  xclip vim  yt-dlp rofi unzip axel android-tools android-file-transfer tree virtualbox virtualbox-guest-iso virtualbox-host-modules-arch fzf pulseaudio-bluetooth bluez neovim make fakeroot patch git pkg-config kodi blueman htop picom  pulsemixer zip xwallpaper aria2 ffmpeg zsh-autosuggestions  lightdm lightdm-gtk-greeter-settings ncdu brightnessctl net-tools pamixer tree fakeroot patch unzip make zsh-syntax-highlighting lightdm-gtk-greeter-settings lightdm ttf-jetbrains-mono ttf-joypixels python3-pip libxft-bgra dunst
+sudo pacman -Sy libreoffice-fresh ncdu mpv zathura zathura-pdf-poppler sxiv exa zsh curl patch adobe-source-sans-fonts elinks  xclip vim  yt-dlp rofi unzip axel android-tools android-file-transfer tree virtualbox virtualbox-guest-iso virtualbox-host-modules-arch fzf pulseaudio-bluetooth bluez neovim make fakeroot patch git pkg-config kodi blueman htop picom  pulsemixer zip xwallpaper aria2 ffmpeg zsh-autosuggestions  lightdm lightdm-gtk-greeter-settings ncdu brightnessctl net-tools pamixer tree fakeroot patch unzip make zsh-syntax-highlighting lightdm-gtk-greeter-settings lightdm ttf-jetbrains-mono ttf-joypixels python3-pip libxft-bgra dunst
 
 
 #install bat
