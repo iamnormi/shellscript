@@ -1,0 +1,2 @@
+
+sudo apt install libx11-dev libxinerama-dev libxft-dev libx11-xcb-dev libxcb-res0-dev libx11-dev libxinerama-dev libxft-dev libx11-xcb-dev libxcb-res0-dev build-essential libx11-dev libxinerama-dev sharutils libxft-dev
