@@ -21,3 +21,4 @@ yt-dlp --extract-audio --audio-format opus --output '%(playlist)s/%(playlist_ind
 yt-dlp --extract-audio --audio-format opus --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c  https://piped.kavin.rocks/playlist?list=OLAK5uy_lMP1gwTUMsZ86qz7hw0aUK-GAMf7xnvbk
 yt-dlp --extract-audio --audio-format opus --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c  https://piped.kavin.rocks/playlist?list=OLAK5uy_nrGnN1IUwaU88sVaN_MGz-gLFAIaHk2DE
 yt-dlp --extract-audio --audio-format opus --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c  https://piped.kavin.rocks/playlist?list=OLAK5uy_mxteRe048RlFwXp8a7mju8GHWRnZXYlAQ
+yt-dlp --extract-audio --audio-format opus --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c https://piped.kavin.rocks/playlist?list=OLAK5uy_mcmw_XWmU5GxJEFq9JxBfxrME2xxXTsOw
