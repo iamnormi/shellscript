@@ -72,3 +72,4 @@ https://music.youtube.com/playlist?list=OLAK5uy_m9481n3CO124xirNwlBKsAhiK-4piZhx
 https://music.youtube.com/playlist?list=OLAK5uy_kxuumjpf3ngzBF241xJs9zqE7f0pKn4lQ
 https://music.youtube.com/playlist?list=OLAK5uy_mpnPYE-HW_6h-wrZErlxHHOzxYBoalDVc
 https://music.youtube.com/playlist?list=OLAK5uy_n6Bx4Xsx6cUPsal10-8Zs_t1rHWuQF3TM
+https://piped.kavin.rocks/playlist?list=OLAK5uy_nc7OD9Gs27BSL2ZgYmPyZG_3LjwhGcBfE
