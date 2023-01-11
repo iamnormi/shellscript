@@ -33,6 +33,7 @@ https://music.youtube.com/playlist?list=OLAK5uy_l3EiZ1Q_y40lf5Zphpf5YhinFK7nVTA1
 https://music.youtube.com/playlist?list=OLAK5uy_mbDx-BDgkdChP-qu0mPVIYz16KtlTY3_k
 https://music.youtube.com/playlist?list=OLAK5uy_kAwIWRB3s-AI0uaL2Xo6C0_LGg-OlrVMk
 https://music.youtube.com/playlist?list=OLAK5uy_nq0Fsi0uas-wHhwb16g5hOkBWpO5-MXeo
+https://piped.kavin.rocks/playlist?list=OLAK5uy_nVcEiVrlOrqtFDpZhgnwAJJQh0GZXI6Uw
 https://music.youtube.com/playlist?list=OLAK5uy_nq0Fsi0uas-wHhwb16g5hOkBWpO5-MXeo
 https://music.youtube.com/playlist?list=OLAK5uy_mW5vhvq_Wr8W59SjP6b772kfLAH8jW9Hs
 https://music.youtube.com/playlist?list=OLAK5uy_kDAGUfwjoIp7jKtZBkHl1qsJpsz-XCuEw
