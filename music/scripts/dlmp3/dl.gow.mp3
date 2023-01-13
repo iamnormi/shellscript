@@ -1,0 +1,3 @@
+yt-dlp --extract-audio --audio-format mp3 --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c https://piped.kavin.rocks/playlist?list=OLAK5uy_lA_-fyszuE0fxFFPXOo5rTD-8uaWBMYUw
+yt-dlp --extract-audio --audio-format mp3 --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c https://piped.kavin.rocks/playlist?list=OLAK5uy_mDM601f2udHv4r7xYV0cwxda0pxhIbdc0
+yt-dlp --extract-audio --audio-format mp3 --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c https://piped.kavin.rocks/playlist?list=OLAK5uy_koQAB9JzJw49W-QCvP5RGSh3I_FCTuLsw

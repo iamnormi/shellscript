@@ -1,8 +1,0 @@
-yt-dlp -f 140 --audio-format m4a --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c https://music.youtube.com/playlist?list=OLAK5uy_mHeA8ArGIJHCD7nReACfktWaKz_ogNTlA
-yt-dlp -f 140 --audio-format m4a --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c https://music.youtube.com/playlist?list=OLAK5uy_nIRucMqHzXWnzwn7xJFFMMrbo8o8wCOJo
-yt-dlp -f 140 --audio-format m4a --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c https://music.youtube.com/playlist?list=OLAK5uy_meMPYMxyCJlX6GtFhmuSjTURLKFAKPIFM
-yt-dlp -f 140 --audio-format m4a --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c https://music.youtube.com/playlist?list=OLAK5uy_kZTe3AtTLf-rVTNFfmKMdy9wp16xmg0qs
-yt-dlp -f 140 --audio-format m4a --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c https://music.youtube.com/playlist?list=OLAK5uy_kRsMhI79BQRP9b6F-DZrbom_WR_WhJB4c
-yt-dlp -f 140 --audio-format m4a --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c https://music.youtube.com/playlist?list=OLAK5uy_m6c1XO6qp065M0YvXQEOfXYHZ3Gi3oJuU
-yt-dlp -f 140 --audio-format m4a --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c https://music.youtube.com/playlist?list=OLAK5uy_kxw9bBV4HCjHyLiZkp9EQXy1lWHaefxz0
-yt-dlp -f 140 --audio-format m4a --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c https://music.youtube.com/playlist?list=OLAK5uy_l_F_4kLiXP-nFkLeEfxGT2PnFxNBHWu9c
