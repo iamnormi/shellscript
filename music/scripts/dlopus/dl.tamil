@@ -1,3 +1,4 @@
 #!/bin/sh
 yt-dlp --extract-audio --audio-format opus --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c https://piped.kavin.rocks/playlist?list=OLAK5uy_kxi2liMcsAkLrHUNaczq4lnRp6niMfmPo
 yt-dlp --extract-audio --audio-format opus --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c https://piped.kavin.rocks/playlist?list=OLAK5uy_mm1LQA3p7g3A8Nu3SRmh8w3u2oEPFExCE
+yt-dlp --extract-audio --audio-format opus --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c  https://piped.kavin.rocks/playlist?list=OLAK5uy_mso6L4oL9o6w17jeoyp-1fRFH-ZnBWf2E
