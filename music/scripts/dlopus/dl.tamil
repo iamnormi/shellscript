@@ -4,3 +4,5 @@ yt-dlp --extract-audio --audio-format opus --output '%(playlist)s/%(playlist_ind
 yt-dlp --extract-audio --audio-format opus --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c https://piped.kavin.rocks/playlist?list=OLAK5uy_mso6L4oL9o6w17jeoyp-1fRFH-ZnBWf2E
 yt-dlp --extract-audio --audio-format opus --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c https://piped.kavin.rocks/playlist?list=OLAK5uy_lGgck1EuN9hD9emKrOQzHX5-ES3-9cYTc
 yt-dlp --extract-audio --audio-format opus --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c https://piped.kavin.rocks/playlist?list=OLAK5uy_l6-Vic_z_nVCFPllFAmNUeWsGdlzsroxM
+yt-dlp --extract-audio --audio-format opus --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c https://piped.kavin.rocks/playlist?list=OLAK5uy_kSc88J8BweBpOsZkosNSEXKNqpguyvCOg
+yt-dlp --extract-audio --audio-format opus --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c https://piped.kavin.rocks/playlist?list=OLAK5uy_lp4KJgzWfXsI2lu91oWfJoXANrHeX_Nv0
