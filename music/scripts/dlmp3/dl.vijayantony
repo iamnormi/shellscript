@@ -1,3 +1,4 @@
+#!/bin/sh
 yt-dlp --extract-audio --audio-format mp3 --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c https://music.youtube.com/playlist?list=OLAK5uy_m10rhMI7w4ioNY9WCxIeyC5RkyosAIcvI
 yt-dlp --extract-audio --audio-format mp3 --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c https://music.youtube.com/playlist?list=OLAK5uy_m10rhMI7w4ioNY9WCxIeyC5RkyosAIcvI
 yt-dlp --extract-audio --audio-format mp3 --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c https://music.youtube.com/playlist?list=OLAK5uy_kjmrArq2KXRd5WSjaoGIhlCHaztf2dit4
@@ -35,3 +36,4 @@ yt-dlp --extract-audio --audio-format mp3 --output '%(playlist)s/%(playlist_inde
 yt-dlp --extract-audio --audio-format mp3 --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c https://music.youtube.com/playlist?list=OLAK5uy_lgmmZBE1DNKIk5VvrTgmfn1_RjQj4FrVg
 yt-dlp --extract-audio --audio-format mp3 --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c https://music.youtube.com/playlist?list=OLAK5uy_kjwMSVGrJkw_H0Ah2atC8JUJbKglLnpwc
 yt-dlp --extract-audio --audio-format mp3 --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c https://music.youtube.com/playlist?list=OLAK5uy_lEpi8IU0ejUTOmPKUVogXi-6kfDwWavUc
+yt-dlp --extract-audio --audio-format mp3 --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c  https://music.youtube.com/playlist?list=OLAK5uy_mvGWFfUHOKmQE7ydM7wXyiBcecb2QpkzI

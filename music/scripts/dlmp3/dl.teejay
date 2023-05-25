@@ -1,0 +1,13 @@
+#!/bin/sh
+yt-dlp --extract-audio --audio-format mp3 --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c  https://music.youtube.com/playlist?list=OLAK5uy_l6GqtyUEYWmDFHjdKBGf6OiwMBhouocnM
+yt-dlp --extract-audio --audio-format mp3 --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c  https://music.youtube.com/playlist?list=OLAK5uy_l25WIZuIuueJZKL4aWLapDUyzZx6HSb00
+yt-dlp --extract-audio --audio-format mp3 --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c  https://piped.kavin.rocks/playlist?list=OLAK5uy_kqdcDaXoU5s0JWUw5I8R3oA5ks7jULF4I
+yt-dlp --extract-audio --audio-format mp3 --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c  https://piped.kavin.rocks/playlist?list=OLAK5uy_nrSe1nKPLz-uYj8Rv403sc2GSWtAYJZXs
+yt-dlp --extract-audio --audio-format mp3 --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c  https://piped.kavin.rocks/playlist?list=OLAK5uy_nXL2sktW9y-q29mhBUArB4tmUHrTWlZCA
+yt-dlp --extract-audio --audio-format mp3 --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c  https://piped.kavin.rocks/playlist?list=OLAK5uy_lTrmaeOcE1P9queqK1nwF5dV1xoViA08o
+yt-dlp --extract-audio --audio-format mp3 --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c  https://piped.kavin.rocks/playlist?list=OLAK5uy_lwk4MCrgkzZeOS8MnctnYADgp2KsiHnSw
+yt-dlp --extract-audio --audio-format mp3 --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c  https://piped.kavin.rocks/playlist?list=OLAK5uy_njKYzlSsdAp44ytMAOGTiSEEkjT7s2Ye4
+yt-dlp --extract-audio --audio-format mp3 --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c  https://piped.kavin.rocks/playlist?list=OLAK5uy_kSLM2be129LAeQknV60DvslNXft2xiCJI
+yt-dlp --extract-audio --audio-format mp3 --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c  https://piped.kavin.rocks/playlist?list=OLAK5uy_k8nTDBUoY3UCtsY-LA5rXM8HzrvyxGjms
+yt-dlp --extract-audio --audio-format mp3 --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c  https://www.youtube.com/playlist?list=PLqHU4keC8aztfpMJIUWWiZoBrlFSi19Gd
+  

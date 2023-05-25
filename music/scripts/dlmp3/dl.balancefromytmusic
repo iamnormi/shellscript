@@ -1,3 +1,4 @@
+#!/bin/sh
 yt-dlp --extract-audio --audio-format mp3 --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c https://www.youtube.com/playlist?list=OLAK5uy_kcn6geUXAkQF-L_IGLxzAffZTTF2LxewQ
 yt-dlp --extract-audio --audio-format mp3 --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c https://www.youtube.com/playlist?list=OLAK5uy_l5n4v34E5H_knzOAa56Zs-HtUas32ymxM
 yt-dlp --extract-audio --audio-format mp3 --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c https://www.youtube.com/watch?v=qD53-RZpTOc

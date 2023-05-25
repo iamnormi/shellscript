@@ -1,1 +1,0 @@
-yt-dlp --extract-audio --audio-format mp3 --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c https://piped.kavin.rocks/playlist?list=OLAK5uy_kxi2liMcsAkLrHUNaczq4lnRp6niMfmPo
