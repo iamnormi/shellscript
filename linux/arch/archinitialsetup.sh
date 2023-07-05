@@ -86,19 +86,19 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 
 # dwm: Window Manager
-git clone --depth=1 https://github.com/iamvk1437k/dwm.git ~/.local/src/dwm
+git clone --depth=1 https://github.com/iamNormi/dwm.git ~/.local/src/dwm
 sudo make -C ~/.local/src/dwm install
 
 # st: Terminal
-git clone --depth=1 https://github.com/iamvk1437k/st.git ~/.local/src/st
+git clone --depth=1 https://github.com/iamNormi/st.git ~/.local/src/st
 sudo make -C ~/.local/src/st install
 
 # dmenu: Program Menu
-git clone --depth=1 https://github.com/iamvk1437k/dmenu.git ~/.local/src/dmenu
+git clone --depth=1 https://github.com/iamNormi/dmenu.git ~/.local/src/dmenu
 sudo make -C ~/.local/src/dmenu install
 
 # dwmblocks: Status bar for dwm
-git clone --depth=1 https://github.com/iamvk1437k/dwmblocks.git ~/.local/src/dwmblocks
+git clone --depth=1 https://github.com/iamNormi/dwmblocks.git ~/.local/src/dwmblocks
 sudo make -C ~/.local/src/dwmblocks install
 
 
