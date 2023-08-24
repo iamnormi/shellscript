@@ -1,7 +1,0 @@
-#!/bin/sh
-python jiosaavn.py https://www.jiosaavn.com/album/kanchana/TODtx4wo8yU_
-python jiosaavn.py https://www.jiosaavn.com/album/kadhalil-sodhappuvadhu-yeppadi/s4YZEvZ9,II_
-python jiosaavn.py https://www.jiosaavn.com/album/kanna-laddu-thinna-aasaiya/HFbWdHCIW,8_
-python jiosaavn.py https://www.jiosaavn.com/album/kanchana-2/zVfgWfONyn4_
-python jiosaavn.py https://www.jiosaavn.com/album/sakalakala-vallavan-appatakkar/Jvco-7ifqGU_
-python jiosaavn.py https://www.jiosaavn.com/album/dhilluku-dhuddu/soNCOkJMOSs_
