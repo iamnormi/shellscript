@@ -69,3 +69,4 @@ yt-dlp --extract-audio --audio-format opus --output '%(playlist)s/%(playlist_ind
 yt-dlp --extract-audio --audio-format opus --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c  https://music.youtube.com/playlist?list=OLAK5uy_kzWTTMSnSVNBoYN7R50Xg-x_3APtwqp0g
 yt-dlp --extract-audio --audio-format opus --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c  https://music.youtube.com/playlist?list=OLAK5uy_k5OJdlUclAUzZn_rdlut1_kbkq6wA6bk8&feature=shared
 yt-dlp --extract-audio --audio-format opus --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c  https://music.youtube.com/playlist?list=OLAK5uy_lUaHTYi9EThGPwiEDQdl9xucm3nAACOZw
+yt-dlp --extract-audio --audio-format opus --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s' --external-downloader aria2c https://music.youtube.com/playlist?list=OLAK5uy_mxHeekmhkN4OAyfa8fxPAh7gETIlrniCk
