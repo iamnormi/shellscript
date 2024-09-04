@@ -1,0 +1,22 @@
+#!/bin/bash
+
+## Remove image from .wav for any location on disk or parent directory ##
+
+
+# Specify the directory where your files are located
+directory="$1"
+
+# Use find to locate .opus files in subdirectories and iterate over them
+find "$directory" -type f -name "*.wav" -exec sh -c '
+  for file do
+    # Extract the filename and path
+    filename=$(basename "$file")
+    path=$(dirname "$file")
+
+    # Change the extension to .webm
+    new_filename="${filename%.wav}.flac"
+
+    # Rename the file
+   ffmpeg -i  "$file" -vn -c:a flac  "$path/$new_filename" ; rm "$file"
+  done
+' sh {} +

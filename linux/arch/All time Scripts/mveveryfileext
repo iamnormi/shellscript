@@ -1,0 +1,20 @@
+#!/bin/bash
+
+## Rename Any Files Extension on all file on disk or directory##
+# Specify the directory where your files are located
+directory="$1"
+
+# Use find to locate .opus files in subdirectories and iterate over them
+find "$directory" -type f -name "*.opus" -exec sh -c '
+  for file do
+    # Extract the filename and path
+    filename=$(basename "$file")
+    path=$(dirname "$file")
+
+    # Change the extension to .webm
+    new_filename="${filename%.opus}.webm"
+
+    # Rename the file
+    mv "$file" "$path/$new_filename"
+  done
+' sh {} +
