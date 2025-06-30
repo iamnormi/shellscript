@@ -5,6 +5,8 @@
 # Disable an app: adb shell pm disable-user --user 0 <package name>
 # Freeze an app: cmd appops set <package_name> RUN_IN_BACKGROUND ignore
 
+# Digital Wellbeing
+# adb shell pm uninstall -k --user 0 com.google.android.apps.wellbeing ## will remove pause app feature
 # Adaptive Connectivity Services
 adb shell pm uninstall -k --user 0 com.google.android.apps.scone
 # Android Auto
@@ -25,8 +27,6 @@ adb shell pm uninstall -k --user 0 com.google.android.apps.pixel.dcservice
 adb shell pm uninstall -k --user 0 com.google.android.apps.work.clouddpc
 # DiagnosticsTool
 adb shell pm uninstall -k --user 0 com.google.android.apps.diagnosticstool
-# Digital Wellbeing
-adb shell pm uninstall -k --user 0 com.google.android.apps.wellbeing
 # Drive
 adb shell pm uninstall -k --user 0 com.google.android.apps.docs
 # Emoji Workshop Wallpaper
